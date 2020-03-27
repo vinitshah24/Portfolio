@@ -1,0 +1,32 @@
+#mainNavbar {
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.carousel-item {
+    height: 80vh;
+    min-height: 350px;
+    background: center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.navbar.scrolled {
+    background: black;
+    opacity: 0.8;
+    transition: background 500ms
+}
+
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
