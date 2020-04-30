@@ -1,3 +1,12 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+#name{
+    font-family: 'Kalam', cursive;
+    font-size: 30px;
+}
+
 #mainNavbar {
     padding-top: 40px;
     padding-bottom: 40px
@@ -27,7 +36,7 @@
 }
 
 .navbar.scrolled {
-    background: #FCFEFF;
+    background: #fff;
     opacity: 1;
     border-bottom: 1px solid lightgray;
     transition: background 500ms;
