@@ -2,8 +2,9 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
     color: #563f1b;
+    font-weight: bold;
 }
 
 p{
@@ -181,3 +182,9 @@ p{
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+/**Form*/
+.form-group.required .control-label:after {
+    content:"*";
+    color:red;
+  }
