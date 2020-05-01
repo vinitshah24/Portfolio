@@ -1,8 +1,20 @@
-body{
+body {
     font-family: 'Raleway', sans-serif;
 }
 
-#name{
+h1, h2, h3 {
+    color: #563f1b;
+}
+
+p{
+    color:#8f7e4f;
+}
+
+.navbar-light .navbar-brand {
+    color: #563f1b;
+}
+
+#name {
     font-family: 'Kalam', cursive;
     font-size: 30px;
 }
@@ -40,6 +52,11 @@ body{
     opacity: 1;
     border-bottom: 1px solid lightgray;
     transition: background 500ms;
+}
+
+.navbar-style {
+    background: #fff;
+    border-bottom: 1px solid lightgray;
 }
 
 .card-img-top {

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vinit Shah Portfolio</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link href="assets/css/style.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <script src="assets/js/style.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+</head>
+
+<header>
+    <nav class="navbar-style navbar navbar-expand-lg navbar-light fixed-top">
+        <a href="index.html" id="name" class="navbar-brand">Vinit Shah</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item"> <a href="index.html" class="nav-link"><b>Home</b></a> </li>
+                <li class="nav-item"> <a href="contact.html" class="nav-link"><b>Contact</b></a> </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body style="margin-top:60px;">
+    <section class="pt-4 pb-4">
+        <div class="container">
+            <h1 class="font-weight-light text-center mt-3">Get in Touch!</h1>
+        </div>
+    </section>
+    <div>
+        <div class="container mb-5 ">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <style>
+                    .hidden {
+                        display: none;
+                    }
+                    </style>
+                    <div class="alert alert-success hidden" id="success-alert">
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;</span>
+                        </button>Thanks for contacting!
+                    </div>
+                    <form action="#" method="GET">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="Subject">Subject:</label>
+                            <input type="subject" class="form-control" id="subject" placeholder="Connect">
+                        </div>
+                        <div class="form-group">
+                            <label for="text">Comment:</label>
+                            <textarea class="form-control" id="text" rows="6"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary" id="modalButton">Submit</button>
+                    </form>
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            $("#modalButton").click(function () {
+                                document.getElementById("modalButton").disabled = true;
+                                //$(this).css('background-color', 'red');
+                                this.className = 'btn btn-secondary';
+                                $('#success-alert').removeClass('hidden');
+                            });
+                            $("button.close").click(function () {
+                                $('#success-alert').addClass('hidden');
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer font-small bg-dark py-3">
+        <div class="container">
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item pl-3 pr-3">
+                    <a href="https://www.linkedin.com/in/vinitshah24/" target="_blank">
+                        <i class="fa fa-twitter" style="font-size:40px;color:white"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item pl-3 pr-3">
+                    <a href="https://github.com/vinitshah24/" target="_blank">
+                        <i class="fa fa-linkedin-square" style="font-size:40px;color:white"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item pl-3 pr-3">
+                    <a href=" https://twitter.com/vinnitshah" target="_blank">
+                        <i class="fa fa-github" style="font-size:40px;color:white"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer text-center py-0" style="color:aliceblue">
+            © Vinit Shah 2020
+        </div>
+    </footer>
+</body>
+
+</html>
